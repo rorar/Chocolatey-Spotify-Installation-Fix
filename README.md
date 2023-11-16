@@ -25,6 +25,9 @@ Run the script with admin privileges. To do so, type in "Powershell" in the sear
 - Option 1: If not done yet, you Set-ExecutionPolicy to unrestricted, just open Powershell as admin and enter `Set-ExecutionPolicy unrestricted` 
 - Option 2: Download the script in the dowmload folder and temporarily whitelist the script using `powershell.exe -noprofile -executionpolicy bypass -file $HOME\Downloads\\Chocolatey-Spotify-Installation-Fix.ps1`
 
-### Regarding Windows 7
+# Notes
+## Current State of the script
+Script does its job but needs some cleanup.
+## Regarding Windows 7
 There might be a fix here that's not implemented:
 https://superuser.com/a/1778056
