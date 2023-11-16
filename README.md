@@ -1,5 +1,6 @@
 # Chocolatey-Spotify-Installation-Fix
 This Scripts allows you to fix the issue if you can't install Spotify because of the hanging scheduled task. 
+Might not work on Windows 7
 
 ## Error desciption
 If Spotify is installed over Chocolatey, it might hang at this point:
@@ -20,5 +21,10 @@ The Chocolatey Installer doesn't check for these:
 - over the task scheduler the spotify setup is fired
 
 ## How to run the script
-1. Either set the Set-ExecutionPolicy to unrestricted, just open Powershell as admin and enter `Set-ExecutionPolicy unrestricted`
-2. Or temporarily whitelist a script using `powershell.exe -noprofile -executionpolicy bypass -file .\Path\To\Script\Chocolatey-Spotify-Installation-Fix.ps1
+Run the script with admin privileges. To do so, type in "Powershell" in the searchbar and select "Run as adminstrator".
+Option 1: If not done yet, you Set-ExecutionPolicy to unrestricted, just open Powershell as admin and enter `Set-ExecutionPolicy unrestricted`
+Option 2: Download the script in the dowmload folder and temporarily whitelist the script using `powershell.exe -noprofile -executionpolicy bypass -file $HOME\Downloads\\Chocolatey-Spotify-Installation-Fix.ps1`
+
+### Regarding Windows 7
+There might be a fix here that's not implemented:
+https://superuser.com/a/1778056
